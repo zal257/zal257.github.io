@@ -1,0 +1,44 @@
+
+body {
+	background-color: rgb(9, 10, 10);
+	background-image: url(images/space2.jpg);
+	background-repeat: no-repeat;
+	margin: auto;
+	cursor: url('images/cursor.gif'), default;
+}
+
+div {
+	position: relative;
+	height: 500px;
+	width: 450px;
+	margin: auto;
+	border-color: rgba(50, 128, 205, 0.85);
+	border-style: ridge;
+	border-width: 5px;
+	background-color: rgba(50, 205, 50, 0.75);
+	overflow: auto;
+}
+
+.wrapper{
+	height: 50px;
+}
+
+.button{
+	border: 1px solid green;
+	background-color: rgb(111, 182, 201);
+}
+
+input{
+	float: left;
+}
+
+footer {
+	position: relative;
+}
+
+canvas {
+	border: 1px solid #000;
+	position: static;
+	margin: auto;
+	
+}
