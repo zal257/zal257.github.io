@@ -1,44 +1,81 @@
 
 body {
-	background-color: rgb(9, 10, 10);
+	background-color: rgb(5, 5, 5);
 	background-image: url(images/space2.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 	margin: auto;
 	cursor: url('images/cursor.gif'), default;
+	font-family: "Roboto", serif;
+}
+
+p {
+	font-size: 20px;
 }
 
 div {
 	position: relative;
-	height: 500px;
-	width: 450px;
-	margin: auto;
-	border-color: rgba(50, 128, 205, 0.85);
+	top: 10%;
+	left: 5px;
+	height: auto;
+	width: 750px;
+	display: inline-block;
+	margin: 5px;
+	border-color: rgba(78, 83, 156, 0.70);
 	border-style: ridge;
-	border-width: 5px;
-	background-color: rgba(50, 205, 50, 0.75);
+	border-width: 8px;
+	background-color: rgba(195, 144, 212, 0.70);
 	overflow: auto;
+	box-sizing: border-box;
 }
 
-.wrapper{
+.text {
+	font-size: 40;
+	color: transparent;
+	background: url(images/space3.jpg) repeat;
+	background-position: 50% calc(50% - 200px);
+	-webkit-background-clip: text;
+}
+
+div.divider {
+	width: auto;
+}
+
+div.navbox {
+	position:absolute;
+	left:5px;
+	top:5px;
+	height: auto;
+	width: auto;
+}
+
+div.navbox1 {
+	position:fixed;
+	top: 5;
+	left: auto;
+	right:5;
+	bottom:auto;
+	height: 110px;
+	width: 225px;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 2;
+}
+
+div.minContainer {
+	background-image: url('images/space1.jpg');
+}
+
+.wrapper {
 	height: 50px;
 }
 
-.button{
+.button {
 	border: 1px solid green;
 	background-color: rgb(111, 182, 201);
+	height: 30px;
 }
 
-input{
+input {
 	float: left;
-}
-
-footer {
-	position: relative;
-}
-
-canvas {
-	border: 1px solid #000;
-	position: static;
-	margin: auto;
-	
 }

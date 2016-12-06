@@ -8,25 +8,21 @@
 </script>
 <!DOCTYPE html>
 <html>
-	<title></title>
-	<head><link rel="stylesheet" type="text/css" href="pagestyle.css"></head>
+	<title>Not Tumblr</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="pagestyle.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<script src='functions.js'></script>
+	</head>
+
 	<body>
-		<div>
-		<p>
-			Hello, welcome to my website. I hope you're enjoying your stay here. <font color="red">Not like you had much a choice anyways...</font>
-		</p>
-		
-		<input type = "button" value = "Click for a greeting" onClick = "main()"/>
-		
-		<script src="functions.js"></script>
-		<p>
-			So anyways, where were we?
-		</p>
+		<div style="width: 750px" id='parent'>
+			<h1 class="font">Hello, welcome to my website.<h1>
+			<p>You'll need a password if you wish to enter.</p>
+			<form method="get" action="">
+				<input type="text" id="pass"/><br>
+				<input type="button" value="submit" onclick="validate();">
+			</form>
 		</div>
-		
 	</body>
-	<aside>
-		<input type="button" value="Contact" onClick="window.location.href = 'contact.html'" align="center"/>
-		<input type="button" value="Game" onClick="window.location.href = 'game.html'" align="center"/>
-	</aside>
 </html>
