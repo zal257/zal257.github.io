@@ -142,19 +142,3 @@ function audio() {
 		alert("You thought life was going to be this easy? Use the navigation bar at the top, ya bum!");
 	}
 }
-
-function timing() {
-	var time = document.getElementById('time');
-	var i =0;
-	while (i > 9, i++) {
-		time.innerHTML = i;
-	}
-	if (time.innerHTML == 9) {
-		setTimeout(timing1(time), 1000);
-	}
-}
-
-function timing1() {
-	var time = document.getElementById('time');
-	time.innerHTML = "There are ten things you need to know.";
-}

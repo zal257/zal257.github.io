@@ -46,7 +46,9 @@ function fnChoose(e) {
 			turn = turn === "X" ? "O" : "X";
 			if (fndecide(targetElement, prevTurn)) {
 				alert(prevTurn + ' has won the game');
+				document.getElementById("earth").src=""
 				fnNewGame();	// Checks if X or O has won the game.
+				alert("Oh, by the way, Earth is gone, and everyone is dead. Good job.");
 			} else if ((score['X'] + score['O']) == (gridValue * gridValue)) {
 				alert('Draw!');
 				fnNewGame();	// If nobody has completed any rows in the entire board, then it is a draw.
